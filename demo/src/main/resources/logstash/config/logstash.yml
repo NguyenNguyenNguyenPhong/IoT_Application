@@ -1,0 +1,14 @@
+  input {
+    kafka {
+    bootstrap_servers => "kafka:9093"
+    topics => ["logs"]
+    group_id => "logstash-consumer"
+    }
+  }
+    
+    output {
+    elasticsearch {
+    hosts => ["elasticsearch:9200"]
+    index => "logs-%{+YYYY.MM.dd}"
+    }
+  }

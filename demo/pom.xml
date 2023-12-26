@@ -28,6 +28,7 @@
 			<version>2.8.0</version> <!-- Kiểm tra phiên bản mới nhất trên trang web Kafka -->
 		</dependency>
 
+
 		<!-- Spring Boot Starter AMQP -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
